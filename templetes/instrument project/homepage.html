@@ -78,13 +78,17 @@
             aspect-ratio: 1;
             clip-path: polygon(99.26% 58.6%, 78.75% 90.91%, 41.4% 99.26%, 9.09% 78.75%, 0.74% 41.4%, 21.25% 9.09%, 58.6% 0.74%, 90.91% 21.25%, 99.26% 58.6%, calc(90.91% - 16.36px) calc(21.25% - -11.5px), calc(58.6% - 3.44px) calc(0.74% - -19.7px), calc(21.25% - -11.5px) calc(9.09% - -16.36px), calc(0.74% - -19.7px) calc(41.4% - -3.44px), calc(9.09% - -16.36px) calc(78.75% - 11.5px), calc(41.4% - -3.44px) calc(99.26% - 19.7px), calc(78.75% - 11.5px) calc(90.91% - 16.36px), calc(99.26% - 19.7px) calc(58.6% - 3.44px), calc(90.91% - 16.36px) calc(21.25% - -11.5px));
         }
+        .menu{
+            position: fixed;
+            z-index: 10;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="flex w-auto">
-        <div class="bg-slate-900 w-12 h-screen py-10 overflow-hidden" onmouseover="smoothTransition(this, '360px', 300)"
+    <div class="flex w-auto ">
+        <div class="bg-slate-900 w-12 h-screen py-10 overflow-hidden menu" onmouseover="smoothTransition(this, '360px', 300)"
             onmouseout="smoothTransition(this, '50px', 300)" onfocus="smoothTransition(this, '360px', 300)"
             onblur="smoothTransition(this, '60px', 300)">
 
@@ -130,7 +134,7 @@
 
         </div>
 
-        <div class="w-screen">
+        <div class="w-screen ml-12">
 
             <div class="bg-blue-50 h-screen">
                 <div class="flex justify-between text-center mx-20 items-center">
@@ -232,6 +236,100 @@
 
 
             </div>
+
+
+
+
+            <div class="container mx-auto px-4 py-8">
+
+                <div class="feature_product grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Guitar -->
+                    <div class="border rounded-lg p-6 bg-white shadow-md">
+                        <img src="image/image1.png" alt="Guitar" class="w-full h-48 object-cover mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Guitar</h3>
+                        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex items-center mt-4">
+                            <span class="text-gray-700 font-semibold">$200</span>
+                            <button class="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+            
+                    <!-- Flute -->
+                    <div class="border rounded-lg p-6 bg-white shadow-md">
+                        <img src="image/image2.png" alt="Flute" class="w-full h-48 object-cover mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Flute</h3>
+                        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex items-center mt-4">
+                            <span class="text-gray-700 font-semibold">$150</span>
+                            <button class="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+            
+                    <!-- Piano -->
+                    <div class="border rounded-lg p-6 bg-white shadow-md">
+                        <img src="image/image3.png" alt="Piano" class="w-full h-48 object-cover mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Piano</h3>
+                        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex items-center mt-4">
+                            <span class="text-gray-700 font-semibold">$500</span>
+                            <button class="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+            
+                    <!-- Drum -->
+                    <div class="border rounded-lg p-6 bg-white shadow-md">
+                        <img src="image/image4.png" alt="Drum" class="w-full h-48 object-cover mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Drum</h3>
+                        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex items-center mt-4">
+                            <span class="text-gray-700 font-semibold">$300</span>
+                            <button class="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+
+
+
+            <footer class="py-12 bg-gray-900 text-white">
+                <div class="container mx-auto">
+                    <!-- Logo and Description -->
+                    <div class="flex justify-around  items-center mb-8">
+                        <div class="flex items-center">
+                            <img src="company_logo.png" alt="Company Logo" class="h-12 mr-4">
+                            <p class="text-lg">Instrument Nepal - Your Destination for Quality Instruments</p>
+                        </div>
+                        
+                        <!-- Menu -->
+                        <ul class="grid grid-cols-3 gap-4">
+                            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                            <li><a href="#" class="hover:text-gray-400">Store</a></li>
+                            <li><a href="#" class="hover:text-gray-400">Order</a></li>
+                            <li><a href="#" class="hover:text-gray-400">Payment</a></li>
+                            <li><a href="#" class="hover:text-gray-400">Profile</a></li>
+                            <li><a href="#" class="hover:text-gray-400">Notification</a></li>
+                            <li><a href="#" class="hover:text-gray-400">Message</a></li>
+                            <li><a href="#" class="hover:text-gray-400">About</a></li>
+                            <li><a href="#" class="hover:text-gray-400">Help</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Copyright -->
+                    <div>&copy; 2024 Instrument Nepal. All rights reserved.</div>
+                </div>
+            </footer>
 
 
             <script>
